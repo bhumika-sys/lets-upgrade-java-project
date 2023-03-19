@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+        int num, digit, sum = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        num = scanner.nextInt();
+
+        // calculate the sum of digits
+        while (num != 0) {
+            digit = num % 10;
+            sum += digit;
+            num /= 10;
+        }
+
+        System.out.println("The sum of digits is " + sum);
+    }
+}
